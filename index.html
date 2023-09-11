@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Задание 1
+    </title>
+</head>
+
+<body>
+    <h1 id="task1">Главная страница</h1>
+    <ul>
+        <li> 
+            <a href="http://kubsu.ru"> Официальный сайт КУБГУ(1) </a>
+        </li>
+        <li>
+            <a href="https://kubsu.ru"> Официальный сайт КУБГУ в протоколе https(2) </a>
+        </li>
+        <li>
+            <a href="https://youtu.be/dQw4w9WgXcQ?si=OL54knhaEEixijpw">
+                <img src="kit.jpg" alt="Кот из Гарри Поттера" width="200" height="200">
+             </a>
+        </li>
+        <li>
+            <a href="/vnutri.html"> Внутренняя страница(4) </a>
+        </li>
+        <li>
+            <a href="/index.html"> Главная страница(5)</a>
+        </li>
+        <li>
+            <a href="#about">Фрагмент сайта(6)</a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com/watch?v=xm3YgoEiEDc&t=400s&ab_channel=10Hours&t=10000" target="_blank"> Ссылка с тремя параметрами в URL(7)</a>
+        </li>
+        <li>
+            <a href="https://www.kubsu.ru#privet">Ссылка с параметром id(8) </a>
+        </li>
+        <li>
+            <a href="./dop.html"> Относительная на страницу в текущем каталоге(9) </a>
+        </li>
+        <li>
+            <a href="./about/ssilka.html">Ссылка относительная на страницу в каталоге about(10)</a>
+        </li>
+        <li>
+            <a href="/about/ssilka.html"> Относительная на страницу выше текущего(11)</a>
+        </li>
+        <li>
+            <a href="/about/newuroven/tree.html">Ссылка на страницу на 2 уровня ниже(12)</a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com/watch?v=_tA1nP1iits&t=1372s">Контекстная в тексте абзаца(13)</a>
+        </li>
+        <li>
+            <a href=https://ru.wikipedia.org/wiki/Третье_сентября_(песня)#История>Ссылка на фрагмент страницы стороннего сайта(14)</a>
+        </li>
+        <li>
+            <p>сылки из прямоугольных и круглых областей картинки(15)</p>
+            <img src="capitan.jpg" alt="Капитан Джек Воробей" usemap="#Map" width="200" height="200">
+            <map name="Map">
+                <area href="https://www.youtube.com/watch?v=aeBsl8feQao" shape="rect" coords="0,0,30,30" alt="ссылка на квадратном объекте">
+                <area href="https://www.youtube.com/watch?v=SI0jgXBi-9I" shape="circle" coords="200,200,100" alt="ссылка на круглом объекте">
+            </map>
+        </li>
+        <li>
+            <a href="">Ссылка с пустым href(16)</a>
+        </li>
+        <li>
+            <a>Ссылка без href(17)</a>
+        </li>
+        <li>
+            <a href="https://kubsu.ru" rel="nofollow"> Ссылка, по которой запрещен переход поисковикам(18)</a>
+        </li>
+        <li>
+            <!--noindex--><a href="https://kubsu.ru/"> Ссылка по которой нельзя индексировать яндексу</a><!--/noindex-->
+        </li>
+        <li>
+            <p>Список ссылок навигации сайта(20)</p>
+            <nav>
+                <ol>
+                    <li><a href="#task1" title="task">Ссылки</a></li>
+                    <li><a href="#form" title="form">Форма</a></li>
+                </ol>
+            </nav>
+        </li>
+        <li>
+            <a href="ftp://demo:demo@http://demo.wftpserver.com/main.html/download/Summer.jpg">ftp файл</a>
+        </li>
+    </ul> 
+
+
+    <p id="about">Вы перешли по фрагменту</p>
+    <form>
+    <h1 id="form">Форма</h1>
+        <label for="fio">ФИО:</label>
+        <input type="text" id="fio" name="fio"><br><br>
+
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone"><br><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="birthdate">Дата рождения:</label>
+        <input type="date" id="birthdate" name="birthdate"><br><br>
+
+        <label>Пол:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Мужской</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Женский</label><br><br>
+
+        <label for="programming-language">Любимый язык программирования:</label>
+        <select id="programming-language" name="programming-language" multiple>
+            <option value="pascal">Pascal</option>
+            <option value="c">C</option>
+            <option value="cpp">C++</option>
+            <option value="javascript">JavaScript</option>
+            <option value="typescript">TypeScript</option>
+            <option value="php">PHP</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="haskell">Haskell</option>
+            <option value="clojure">Clojure</option>
+            <option value="prolog">Prolog</option>
+            <option value="scala">Scala</option>
+        </select><br><br>
+
+        <label for="bio">Биография:</label><br>
+        <textarea id="bio" name="bio" rows="4" cols="50"></textarea><br><br>
+
+        <input type="checkbox" id="contract" name="contract">
+        <label for="contract">С контрактом ознакомлен/а</label><br><br>
+
+        <input type="submit" value="Сохранить">
+    </form>   
+</body>
+</html>
