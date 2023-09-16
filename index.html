@@ -2,25 +2,23 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <title>
         Задание 1
     </title>
 </head>
 
 <body>
-    <h1 id="task1">Главная страница</h1>
-    <header>
-        <div class="container">
-            <a href="/" class="logo">LOGO</a>
-            <nav>
-              <ul>
-                <li><a href="">Главная</a></li>
-                <li><a href="">О нас</a></li>
-                <li><a href="">Контакты</a></li>
-              </ul>
-            </nav>
-          </div>
-    </header>
+    <header class="header">
+          <a href="/" class="logo"><img src="kit.jpg" alt="Кот из Гарри Поттера" width="90" height="90"></a>
+            <ul class="ul">
+              <li><a href="https://ilibrary.ru/text/11/index.html">Война и мир</a></li>
+              <li><a href="https://ilibrary.ru/text/1070/p.15/index.html">Вий</a></li>
+              <li><a href="https://ilibrary.ru/text/69/index.html">Преступление и наказание</a></li>
+            </ul>
+        <h1 id="task1">Главная страница</h1>
+      </header>
+    <nav>
     <ul>
         <li> 
             <a href="http://kubsu.ru"> Официальный сайт КУБГУ(1) </a>
@@ -61,7 +59,10 @@
             <a href="/about/newuroven/tree.html">Ссылка на страницу на 2 уровня ниже(12)</a>
         </li>
         <li>
-            <a href="https://www.youtube.com/watch?v=_tA1nP1iits&t=1372s">Контекстная в тексте абзаца(13)</a>
+            <p>Лучшая музыка на планете 
+            <a href="https://www.youtube.com/watch?v=_tA1nP1iits&t=1372s">здесь</a>
+            (Контекстная в тексте абзаца(13))
+        </p>
         </li>
         <li>
             <a href=https://ru.wikipedia.org/wiki/Третье_сентября_(песня)#История>Ссылка на фрагмент страницы стороннего сайта(14)</a>
@@ -90,7 +91,8 @@
             <p>Список ссылок навигации сайта(20)</p>
             <nav>
                 <ol>
-                    <li><a href="#task1" title="task">Ссылки</a></li>
+                    <li><a href="#task1" title="task">Начало</a></li>
+                    <li><a href="#table" title="table">Таблица</a></li>
                     <li><a href="#form" title="form">Форма</a></li>
                 </ol>
             </nav>
@@ -100,6 +102,47 @@
         </li>
     </ul> 
 
+    <h1 id="table">Таблица</h1>
+
+    <table border="2">
+        <tr bgcolor="#f11111">
+          <th>Колонка 1 </th>
+          <th>Колонка 2 </th>
+          <th>Колонка 3 </th>
+          <th>Колонка 4 </th>
+        </tr>
+        <tr bgcolor="#0000CD">
+          <td colspan="2">Ячейка 11 объединенная с 12</td>
+          <td>Ячейка 13</td>
+          <td>Ячейка 14</td>
+        </tr>
+        <tr bgcolor="#f11111">
+          <td>Ячейка 21</td>
+          <td>Ячейка 22</td>
+          <td colspan="2">Ячейка 23 объединенная с 24</td>
+        </tr>
+        <tr bgcolor="#0000CD">
+            <td>Ячейка 31</td>
+            <td colspan="2">Ячейка 32 объединенная с 33</td>
+            <td>Ячейка 34</td>
+          </tr>
+        <tr bgcolor="#f11111">
+            <td colspan="2">Ячейка 11 объединенная с 12</td>
+            <td>Ячейка 13</td>
+            <td>Ячейка 14</td>
+          </tr>
+          <tr bgcolor="#0000CD">
+            <td>Ячейка 51</td>
+            <td>Ячейка 52</td>
+            <td rowspan="2">Ячейка 53 объединенная с 63</td>
+            <td>Ячейка 52</td>
+          </tr>
+        <tr bgcolor="#f11111">
+          <td>Ячейка 61</td>
+          <td>Ячейка 62</td>
+          <td>Ячейка 64</td>
+        </tr>
+      </table>
 
     <p id="about">Вы перешли по фрагменту</p>
     <form>
@@ -145,6 +188,10 @@
         <label for="contract">С контрактом ознакомлен/а</label><br><br>
 
         <input type="submit" value="Сохранить">
-    </form>   
+    </form>  
+</nav>
+<footer class="footer-bg">
+     Д. Медведев
+   </footer>
 </body>
 </html>
