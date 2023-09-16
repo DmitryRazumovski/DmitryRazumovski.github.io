@@ -7,20 +7,19 @@
   box-sizing: border-box;
   float:inline-start;
 }
-.logo {
-  float: left;
+.logo{
+  float:left;
 }
 .ul {
   float: right;
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-left: px;
 }
 .ul li {
   display: inline-block; 
   margin-left: 50px;
-}
+} 
 .footer-bg
 {
   max-width: 960px;
