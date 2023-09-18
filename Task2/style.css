@@ -28,6 +28,9 @@
   align-items: center;
   padding: 15px 15px;
   box-sizing: border-box;
+  text-align: center;
+  border: 2px solid blue;
+
 }
 .first{
   background: #ff0606;
