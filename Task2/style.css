@@ -6,6 +6,7 @@
   padding: 15px 15px;
   box-sizing: border-box;
   float:inline-start;
+  border: 2px solid rgb(255, 0, 0);
 }
 .logo{
   float:left;
