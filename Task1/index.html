@@ -99,50 +99,55 @@
         </ul>
 
         <p id="about">Вы перешли по фрагменту</p>
-        <form>
-            <h3 id="form">Форма</h3>
-            <label for="fio">ФИО:</label>
-            <input type="text" id="fio" name="fio"><br><br>
-
-            <label for="phone">Телефон:</label>
-            <input type="tel" id="phone" name="phone"><br><br>
-
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email"><br><br>
-
-            <label for="birthdate">Дата рождения:</label>
-            <input type="date" id="birthdate" name="birthdate"><br><br>
-
-            <label>Пол:</label>
-            <input type="radio" id="male" name="gender" value="male">
-            <label for="male">Мужской</label>
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Женский</label><br><br>
-
-            <label for="programming-language">Любимый язык программирования:</label>
-            <select id="programming-language" name="programming-language" multiple>
-                <option value="pascal">Pascal</option>
-                <option value="c">C</option>
-                <option value="cpp">C++</option>
-                <option value="javascript">JavaScript</option>
-                <option value="typescript">TypeScript</option>
-                <option value="php">PHP</option>
-                <option value="python">Python</option>
-                <option value="java">Java</option>
-                <option value="haskell">Haskell</option>
-                <option value="clojure">Clojure</option>
-                <option value="prolog">Prolog</option>
-                <option value="scala">Scala</option>
-            </select><br><br>
-
-            <label for="bio">Биография:</label><br>
-            <textarea id="bio" name="bio" rows="4" cols="50"></textarea><br><br>
-
-            <input type="checkbox" id="contract" name="contract">
-            <label for="contract">С контрактом ознакомлен/а</label><br><br>
-
-            <input type="submit" value="Сохранить">
-        </form>
+        <h2 id="form">Форма</h2>
+            <form>
+                <label for="fio">ФИО:</label>
+                <input type="text" id="fio" name="fio" required pattern="^[a-zA-Zа-яА-Я]+$"/><br /><br />
+          
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" required pattern="^[ 0-9]+$"/><br /><br />
+          
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required/><br /><br />
+          
+                <label for="birthdate">Дата рождения:</label>
+                <input type="date" id="birthdate" name="birthdate" required /><br /><br />
+          
+                <label>Пол:</label>
+                <input type="radio" id="male" name="gender" value="male" required />
+                <label for="male">Мужской</label>
+                <input type="radio" id="female" name="gender" value="female" required />
+                <label for="female">Женский</label><br /><br />
+          
+                <a>Любимый язык программирования</a>
+                <label>
+                  <br />
+                  <select>
+                      <option disabled>Любимый язык программирования</option>
+                      <option value="Js">Js</option>
+                      <option value="C++" >C++</option>
+                      <option value="C" >C</option>
+                      <option value="Pascal" >Pascal</option>
+                      <option value="PHP" >PHP</option>
+                      <option value="Python" >Python</option>
+                      <option value="Java" >Java</option>
+                      <option value="Haskel" >Haskel</option>
+                      <option value="Clojure" >Clojure</option>
+                      <option value="Prolog" >Prolog</option>
+                      <option value="Scala" >Scala</option>
+                      <option value="SQL" >SQL</option>
+                      
+                  </select>
+              </label><br /><br />
+          
+                <label for="bio">Биография:</label><br />
+                <textarea id="bio" name="bio" rows="4" cols="50"></textarea><br /><br />
+          
+                <input type="checkbox" id="contract" name="contract" required />
+                <label for="contract">С контрактом ознакомлен(а) </label><br /><br />
+          
+                <input type="submit" value="Сохранить" />
+              </form>
 </body>
 
 </html>
