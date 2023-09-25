@@ -91,6 +91,10 @@ h1 {
 .references__item {
   margin-left: 20px;
   margin-bottom: 8px;
+  list-style: none;
+}
+.references__item ol{
+  list-style: none;
 }
 
 .references__item a {
@@ -181,7 +185,6 @@ select::-webkit-scrollbar {
   font-family: Arial, Helvetica, sans-serif;
   color: #E1CBD7;
   font-size: 20px;
-  float: right;
   padding: 15px 0;
 }
 .footer-bg
