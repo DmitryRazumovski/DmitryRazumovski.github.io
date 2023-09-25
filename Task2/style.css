@@ -34,7 +34,6 @@
   color: #E1CBD7;
   font-family: Arial;
   font-size: 30px;
-  float: right;
   margin-left: 40px;
   margin-top: 32px;
 }
@@ -86,11 +85,7 @@ h1 {
 }
 
 .block {
-  background-color: #E1CBD7;
   padding: 20px;
-  border-radius: 20px;
-  border: 2px solid #26425A;
-  margin-bottom: 30px;
 }
 
 .references__item {
