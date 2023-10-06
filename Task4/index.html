@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>
+        Задание 2
+    </title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="content">
+            <div class="wrapper">
+                <div class="left">
+                    <div class="logo">
+                        <a href="https://www.youtube.com/watch?v=30jrmzzgHLc"><img src="gosling.jpg"
+                            alt="Ryan Gosling" width="90" height="90"></a>
+                    </div>
+                    <div class="name">
+                        <h1 id="task1">Главная страница</h1>
+                    </div>
+                </div>
+                <div class="right">
+                    <nav>
+                        <ul class="list wrapper">
+                            <li><a href="https://ilibrary.ru/text/11/index.html">Война и мир</a></li>
+                            <li><a href="https://ilibrary.ru/text/1070/p.15/index.html">Вий</a></li>
+                            <li><a href="https://ilibrary.ru/text/69/index.html">Преступление и наказание</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+
+    <main>
+        <div class="content">
+            <div class="background">
+                <ul id="id_ul" class="references block">
+                    <li class="references__item block_title list_title">
+                        <h2>Список ссылок</h2>
+                    </li>
+            <li class="references__item">
+                <a href="http://kubsu.ru"> Официальный сайт КУБГУ(1)</a>
+            </li>
+            <li class="references__item">
+                <a href="https://kubsu.ru"> Официальный сайт КУБГУ в протоколе https(2) </a>
+            </li>
+            <li class="references__item">
+                <a href="https://youtu.be/dQw4w9WgXcQ?si=OL54knhaEEixijpw">
+                    <img src="kit.jpg" alt="Кот из Гарри Поттера" width="200" height="200">
+                </a>
+            </li>
+            <li class="references__item">
+                <a href="/Task2/vnutri.html"> Внутренняя страница(4) </a>
+            </li>
+            <li class="references__item">
+                <a href="/Task2/index.html"> Главная страница(5)</a>
+            </li>
+            <li class="references__item">
+                <a href="#form">Фрагмент сайта(6)</a>
+            </li>
+            <li class="references__item">
+                <a href="https://www.youtube.com/watch?v=xm3YgoEiEDc&ab_channel=10Hours&t=10000" target="_blank"> Ссылка
+                    с тремя параметрами в URL(7)</a>
+            </li>
+            <li class="references__item">
+                <a href="https://www.kubsu.ru#privet">Ссылка с параметром id(8) </a>
+            </li>
+            <li class="references__item">
+                <a href="./dop.html"> Относительная на страницу в текущем каталоге(9) </a>
+            </li>
+            <li class="references__item">
+                <a href="./about/ssilka.html">Ссылка относительная на страницу в каталоге about(10)</a>
+            </li>
+            <li class="references__item">
+                <a href ="/Task2/about/ssilka.html"> Относительная на страницу выше текущего(11)</a>
+            </li>
+             <li class="references__item">
+                <a href="/Task2/about/newuroven/tree.html">Ссылка на страницу на 2 уровня ниже(12)</a>
+            </li>
+            <li class="references__item">
+                <p>Лучшая музыка на планете
+                    <a href="https://www.youtube.com/watch?v=_tA1nP1iits&t=1372s">здесь</a>
+                    (Контекстная в тексте абзаца(13))
+                </p>
+            </li>
+            <li class="references__item">
+                <a href=https://ru.wikipedia.org/wiki/Третье_сентября_(песня)#История>Ссылка на фрагмент страницы
+                    стороннего сайта(14)</a>
+            </li>
+            <li class="references__item">
+                <p>сылки из прямоугольных и круглых областей картинки(15)</p>
+                <img src="capitan.jpg" alt="Капитан Джек Воробей" usemap="#Map" width="200" height="200">
+                <map name="Map">
+                    <area href="https://www.youtube.com/watch?v=aeBsl8feQao" shape="rect" coords="0,0,30,30"
+                        alt="ссылка на квадратном объекте">
+                    <area href="https://www.youtube.com/watch?v=SI0jgXBi-9I" shape="circle" coords="200,200,100"
+                        alt="ссылка на круглом объекте">
+                </map>
+            </li>
+            <li class="references__item">
+                <a href="">Ссылка с пустым href(16)</a>
+            </li>
+            <li class="references__item">
+                <a>Ссылка без href(17)</a>
+            </li>
+            <li class="references__item">
+                <a href="https://kubsu.ru" rel="nofollow"> Ссылка, по которой запрещен переход поисковикам(18)</a>
+            </li>
+            <li class="references__item">
+                <!--noindex--><a href="https://kubsu.ru/"> Ссылка по которой нельзя индексировать
+                    яндексу(19)</a><!--/noindex-->
+            </li>
+            <li class="references__item">
+                <p>Список ссылок навигации сайта(20)</p>
+                <nav>
+                    <ol class="list_navig">
+                        <li><a href="#task1" title="task">Начало</a></li>
+                        <li><a href="#table" title="table">Таблица</a></li>
+                        <li><a href="#form" title="form">Форма</a></li>
+                    </ol>
+                </nav>
+            </li>
+            <li class="references__item">
+                <a href="ftp://demo:demo@http://demo.wftpserver.com/main.html/download/Summer.jpg">FTP файл(21)</a>
+            </li>
+        </ul>
+
+        <table class="table block">
+            <tr class="odd">
+                <th class="table_header table_item" colspan="4" id="table">
+                    Таблица
+                </th>
+
+            <tr class="even">
+                <th class="table_item">Колонка 1 </th>
+                <th class="table_item">Колонка 2 </th>
+                <th class="table_item">Колонка 3 </th>
+                <th class="table_item">Колонка 4 </th>
+            </tr>
+            <tr class="odd">
+                <td colspan="2" class="table_item">Ячейка 11 объединенная с 12</td>
+                <td class="table_item">Ячейка 13</td>
+                <td class="table_item">Ячейка 14</td>
+            </tr>
+            <tr class="even">
+                <td class="table_item">Ячейка 21</td>
+                <td class="table_item">Ячейка 22</td>
+                <td colspan="2" class="table_item">Ячейка 23 объединенная с 24</td>
+            </tr>
+            <tr class="odd">
+                <td class="table_item">Ячейка 31</td>
+                <td colspan="2" class="table_item">Ячейка 32 объединенная с 33</td>
+                <td class="table_item">Ячейка 34</td>
+            </tr>
+            <tr class="even">
+                <td colspan="2" class="table_item">Ячейка 41 объединенная с 42</td>
+                <td class="table_item">Ячейка 43</td>
+                <td class="table_item">Ячейка 44</td>
+            </tr>
+            <tr class="odd">
+                <td class="table_item">Ячейка 51</td>
+                <td class="table_item">Ячейка 52</td>
+                <td rowspan="2" class="table_item">Ячейка 53 объединенная с 63</td>
+                <td class="table_item">Ячейка 54</td>
+            </tr>
+            <tr class="even">
+                <td class="table_item">Ячейка 61</td>
+                <td class="table_item">Ячейка 62</td>
+                <td class="table_item">Ячейка 64</td>
+            </tr>
+        </table>
+        
+
+    <form id="form" action="/" method="POST" class="block">
+        <h2 class="block_title">Форма</h2>
+            <label>
+                <input class="form_item" type="text" name="fio" placeholder="Введите ФИО" required pattern="^[А-Яа-яЁё\s]+$">
+            </label>
+            <br>
+            <label>
+                <input class="form_item" type="tel" name="tel" placeholder="Введите телефон" required pattern="^[ 0-9]+$">
+            </label>
+            <br>
+            <label>
+                <input class="form_item" type="email" name="email" placeholder="Введите email" required>
+            </label>
+            <br>
+            <label class="form_text">
+                Дата рождения:
+                <input class="form_item" type="date" name="birthday" required>
+            </label>
+            <br>
+            <p class="form_text">
+                Пол:
+                <br>
+                <label class="form_text">
+                    <input type="radio" name="gender" value="male" required>
+                    Мужской
+                </label>   
+                <label>
+                    <input type="radio" name="gender" value="female" required>
+                    Женский
+                </label>
+            </p>
+            <br>
+            <label class="form_text">
+                Выберете свои любимые языки:
+                <br>
+                <br>
+                <select name="favorite_language" multiple required>
+                    <option value="Pascal">Pascal</option>
+                    <option value="C">C</option>
+                    <option value="C++">C++</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="PHP">PHP</option>
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                    <option value="Haskel">Haskel</option>
+                    <option value="Clojure">Clojure</option>
+                    <option value="Prolog">Prolog</option>
+                    <option value="Scala">Scala</option>
+                </select>
+            </label>
+            <br>
+            <textarea name="biography" required>Расскажите немного о себе</textarea>
+            <br>
+            <label class="agreement">
+                <input type="checkbox" name="agreement" required>
+                С контрактом ознакомлен (а)
+            </label>
+            <br>
+            <input class="form_item button" type="submit" id="Unique_Id" value="Отправить">
+        </form>
+    </div>
+</div>
+</main>
+
+<footer class="footer">
+<div class="content">
+    <div class="wrapper">
+        <div class="footer__text">
+            Дмитрий Разумовский
+        </div>
+    </div>
+</div>
+</footer>
+</body>
+</html>
