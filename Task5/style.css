@@ -198,3 +198,20 @@ select::-webkit-scrollbar {
   text-align: center;
   border: 2px solid rgb(117, 20, 20);
 }
+
+.list-inline {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list-inline li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) { 
+  .list-inline li {
+      display: block; 
+      margin-right: 0;
+  }
+}
