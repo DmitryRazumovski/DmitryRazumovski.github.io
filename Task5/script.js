@@ -19,6 +19,7 @@ function calculateTotal() {
       default:
         price = 0;
     }
+    const totalCost = 0
     if (quantity>0){
         const totalCost = price * quantity;
     }
