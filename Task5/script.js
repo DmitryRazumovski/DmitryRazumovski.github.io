@@ -21,8 +21,9 @@ function calculateTotal() {
     }
     const totalCost = 0;
     if (quantity>0){
-        const totalCost = price * quantity;
+        const totalCost = price * quantity;        
+        document.getElementById("totalCost").textContent = totalCost;
     }
-
-    document.getElementById("totalCost").textContent = totalCost;
+    else{
+    document.getElementById("totalCost").textContent = totalCost;}
   }
