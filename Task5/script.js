@@ -19,8 +19,9 @@ function calculateTotal() {
       default:
         price = 0;
     }
-
-    const totalCost = price * quantity;
+    if (quantity>0){
+        const totalCost = price * quantity;
+    }
 
     document.getElementById("totalCost").textContent = totalCost;
   }
