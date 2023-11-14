@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <title>Задание 5</title>
+  </head>
+
+    <header class="header bg-light">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-6">
+              <div class="d-flex align-items-center">
+                <div class="logo mr-3">
+                    <a href="https://www.youtube.com/watch?v=30jrmzzgHLc"><img src="gosling.jpg"
+                        alt="Ryan Gosling" width="90" height="90"></a>
+                </div>
+                <h1>Главная страница</h1>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 container-lg">
+              <div class="header__content-down text-right">
+                <nav>
+                  <div class="container-fluid">
+                      <ul class="list-inline flex-row flex-sm-column">
+                          <li class="list-inline-item"><a class="header__menu-link" href="#task">Ссылки</a></li>
+                          <li class="list-inline-item"><a class="header__menu-link" href="#table">Таблица</a></li>
+                          <li class="list-inline-item"><a class="header__menu-link" href="#form">Форма</a></li>
+                      </ul>
+                  </div>
+              </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+    <main class="main">
+        <div class="container">
+          <div class="container-fluid flex flex-column d-flex">
+        <section class="section__links order-2 order-md-1">
+            <ul class="list-unstyled">
+              <li class="references__item">
+                <h2 id="tanks">Ссылки</h2>
+              </li>
+            <li class="references__item">
+                <a href="http://kubsu.ru"> Официальный сайт КУБГУ(1)</a>
+            </li>
+            <li class="references__item">
+                <a href="https://kubsu.ru"> Официальный сайт КУБГУ в протоколе https(2) </a>
+            </li>
+            <li class="references__item">
+                <a href="https://youtu.be/dQw4w9WgXcQ?si=OL54knhaEEixijpw">
+                    <img src="kit.jpg" alt="Кот из Гарри Поттера" width="200" height="200">
+                </a>
+            </li>
+            <li class="references__item">
+                <a href="/Task2/vnutri.html"> Внутренняя страница(4) </a>
+            </li>
+            <li class="references__item">
+                <a href="/Task2/index.html"> Главная страница(5)</a>
+            </li>
+            <li class="references__item">
+                <a href="#form">Фрагмент сайта(6)</a>
+            </li>
+            <li class="references__item">
+                <a href="https://www.youtube.com/watch?v=xm3YgoEiEDc&ab_channel=10Hours&t=10000" target="_blank"> Ссылка
+                    с тремя параметрами в URL(7)</a>
+            </li>
+            <li class="references__item">
+                <a href="https://www.kubsu.ru#privet">Ссылка с параметром id(8) </a>
+            </li>
+            <li class="references__item">
+                <a href="./dop.html"> Относительная на страницу в текущем каталоге(9) </a>
+            </li>
+            <li class="references__item">
+                <a href="./about/ssilka.html">Ссылка относительная на страницу в каталоге about(10)</a>
+            </li>
+            <li class="references__item">
+                <a href ="/Task2/about/ssilka.html"> Относительная на страницу выше текущего(11)</a>
+            </li>
+             <li class="references__item">
+                <a href="/Task2/about/newuroven/tree.html">Ссылка на страницу на 2 уровня ниже(12)</a>
+            </li>
+            <li class="references__item">
+                <p>Лучшая музыка на планете
+                    <a href="https://www.youtube.com/watch?v=_tA1nP1iits&t=1372s">здесь</a>
+                    (Контекстная в тексте абзаца(13))
+                </p>
+            </li>
+            <li class="references__item">
+                <a href=https://ru.wikipedia.org/wiki/Третье_сентября_(песня)#История>Ссылка на фрагмент страницы
+                    стороннего сайта(14)</a>
+            </li>
+            <li class="references__item">
+                <p>сылки из прямоугольных и круглых областей картинки(15)</p>
+                <img src="capitan.jpg" alt="Капитан Джек Воробей" usemap="#Map" width="200" height="200">
+                <map name="Map">
+                    <area href="https://www.youtube.com/watch?v=aeBsl8feQao" shape="rect" coords="0,0,30,30"
+                        alt="ссылка на квадратном объекте">
+                    <area href="https://www.youtube.com/watch?v=SI0jgXBi-9I" shape="circle" coords="200,200,100"
+                        alt="ссылка на круглом объекте">
+                </map>
+            </li>
+            <li class="references__item">
+                <a href="">Ссылка с пустым href(16)</a>
+            </li>
+            <li class="references__item">
+                <a>Ссылка без href(17)</a>
+            </li>
+            <li class="references__item">
+                <a href="https://kubsu.ru" rel="nofollow"> Ссылка, по которой запрещен переход поисковикам(18)</a>
+            </li>
+            <li class="references__item">
+                <!--noindex--><a href="https://kubsu.ru/"> Ссылка по которой нельзя индексировать
+                    яндексу(19)</a><!--/noindex-->
+            </li>
+            <li class="references__item">
+                <p>Список ссылок навигации сайта(20)</p>
+                <nav>
+                    <ol class="list_navig">
+                        <li><a href="#task1" title="task">Начало</a></li>
+                        <li><a href="#table" title="table">Таблица</a></li>
+                        <li><a href="#form" title="form">Форма</a></li>
+                    </ol>
+                </nav>
+            </li>
+            <li class="references__item">
+                <a href="ftp://demo:demo@http://demo.wftpserver.com/main.html/download/Summer.jpg">FTP файл(21)</a>
+            </li>
+        </ul>
+    </section>
+            <section class="section__table order-1 order-md-2">
+              <table class="table table-bordered">
+                <tr class="odd">
+                  <th class="table_header" colspan="4" id="table">Таблица</th>
+                </tr>
+
+                <tr class="even">
+                    <th>Колонка 1</th>
+                    <th>Колонка 2</th>
+                    <th>Колонка 3</th>
+                    <th>Колонка 4</th>
+                  </tr>
+                  <tr class="odd">
+                    <td colspan="2">Ячейка 11 объединенная с 12</td>
+                    <td>Ячейка 13</td>
+                    <td>Ячейка 14</td>
+                  </tr>
+                  <tr class="even">
+                    <td>Ячейка 21</td>
+                    <td>Ячейка 22</td>
+                    <td colspan="2">Ячейка 23 объединенная с 24</td>
+                  </tr>
+                  <tr class="odd">
+                    <td>Ячейка 31</td>
+                    <td colspan="2">Ячейка 32 объединенная с 33</td>
+                    <td>Ячейка 34</td>
+                  </tr>
+                  <tr class="even">
+                    <td colspan="2">Ячейка 41 объединенная с 42</td>
+                    <td>Ячейка 43</td>
+                    <td>Ячейка 44</td>
+                  </tr>
+                  <tr class="odd">
+                    <td>Ячейка 51</td>
+                    <td>Ячейка 52</td>
+                    <td rowspan="2">Ячейка 53 объединенная с 63</td>
+                    <td>Ячейка 54</td>
+                  </tr>
+                  <tr class="even">
+                    <td>Ячейка 61</td>
+                    <td>Ячейка 62</td>
+                    <td>Ячейка 64</td>
+                  </tr>
+                </table>
+              </section>
+            </div>
+
+       <section class="section__form">
+          <h2 id="form">Форма</h2>
+          <form>
+            <div class="form-group">
+              <label for="fio">ФИО:</label>
+              <input
+                type="text"
+                id="fio"
+                name="fio"
+                class="form-control"
+                required
+                pattern="^[А-Яа-яЁё\s]+$"
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone">Телефон:</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                class="form-control"
+                required
+                pattern="^[ 0-9]+$"
+              />
+            </div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required /><br /><br />
+
+            <label for="birthdate">Дата рождения:</label>
+            <input
+              type="date"
+              id="birthdate"
+              name="birthdate"
+              required
+            /><br /><br />
+
+            <label>Пол:</label>
+            <input type="radio" id="male" name="gender" value="male" required />
+            <label for="male">Мужской</label>
+            <input
+              type="radio"
+              id="female"
+              name="gender"
+              value="female"
+              required
+            />
+            <label for="female">Женский</label><br /><br />
+
+            <label>Любимый язык программирования:</label>
+            <label>
+              <br />
+              <select>
+                <option disabled>Любимый язык программирования</option>
+                <option value="Js">Js</option>
+                <option value="C++">C++</option>
+                <option value="Pascal">Pascal</option>
+                <option value="PHP">PHP</option>
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+                <option value="Haskel">Haskel</option>
+                <option value="Clojure">Clojure</option>
+                <option value="Prolog">Prolog</option>
+                <option value="Scala">Scala</option>
+                <option value="C">C</option>
+              </select> </label
+            ><br /><br />
+
+            <label for="bio">Биография:</label><br />
+            <textarea id="bio" name="bio" rows="4" cols="50" required></textarea
+            ><br /><br />
+
+            <input type="checkbox" id="contract" name="contract" required />
+            <label for="contract">С контрактом ознакомлен(а)</label><br /><br />
+
+            <button type="submit" class="btn btn-primary">Сохранить</button>
+            <h2 class="calculator" id="calculator">Составьте свой заказ</h2>
+            <form>
+                <p>Выберите товар:
+                    <select name="myselect" required>
+                        <option value="1">фри 55 руб.</option>
+                        <option value="2">хлеб 40 руб.</option>
+                        <option value="3">пица 99 руб.</option>
+                    </select>
+                </p>
+    
+                <p>Введите количество: <input id="quantity" class="quantity"></p>
+    
+                <div class="myradios" id="myradios">
+                    <label><input type="radio" name="myradio" value="40">Кетчуп</label>
+                    <label><input type="radio" name="myradio" value="40">Сырный соус</label>
+                    <label><input type="radio" name="myradio" value="40">Чесночный соус</label>
+                </div>
+    
+                <p class="mycheckbox" id="mycheckbox">
+                    <label>
+                        Нужен пакетик? <input value="10" type="checkbox">
+                    </label>
+                </p>
+    
+            </form>
+            <button id="button">Calculate</button>
+            <p id="finalPrice"></p>
+            <script src="script.js"></script>
+    </main>
+<footer class="footer">
+<div class="content">
+    <div class="wrapper">
+        <div class="footer__text">
+            Дмитрий Разумовский
+        </div>
+    </div>
+</div>
+</footer>
+</body>
+</html>
