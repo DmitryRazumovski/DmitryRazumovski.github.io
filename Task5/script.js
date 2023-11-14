@@ -19,8 +19,11 @@ function calculateTotal() {
       default:
         price = 0;
     }
-
-    const totalCost = price * quantity;
-
-    document.getElementById("totalCost").textContent = totalCost;
+    const totalCost = 0;
+    if (quantity>0){
+        const totalCost = price * quantity;        
+        document.getElementById("totalCost").textContent = totalCost;
+    }
+    else{
+    document.getElementById("totalCost").textContent = totalCost;}
   }
